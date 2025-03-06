@@ -1,0 +1,22 @@
+-- calls
+
+-- vorbereitung
+source _vorbereitung\01_preparations.sql
+
+-- 1:1
+source kardinalitaet_1_1\03_1-1.sql
+source kardinalitaet_1_1\03a_1-1_select.sql
+
+-- 1:n
+source kardinalitaet_1_n\03_1-n.sql
+source kardinalitaet_1_n\03a_1-n_select.sql
+
+-- n:m I
+source kardinalitaet_n_m_I\03_n-m.sql
+source kardinalitaet_n_m_I\03a_n-m_select.sql
+
+-- n:m II
+source kardinalitaet_n_m_II\03_1-1_n-m.sql
+source kardinalitaet_n_m_II\03a_1-1_n-m_select.sql
+source kardinalitaet_n_m_II\03b_1-1_n-m_select.sql
+

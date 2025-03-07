@@ -1,10 +1,11 @@
 -- Vorbereitungen
 
-DROP TABLE IF EXISTS design.servants,  design.cats;:
+DROP TABLE IF EXISTS design.servants;
+Drop TABLE IF EXISTS design.cats;
 
 -- Mastertabelle (MT): unverändert
 
-CREATE TABLE design.cats IF NOT EXISTS design.cats;
+CREATE TABLE design.cats 
 (
   cat_id    INT         NOT NULL AUTO_INCREMENT,
   cat_name  VARCHAR(45) NOT NULL,
@@ -17,7 +18,7 @@ CREATE TABLE design.cats IF NOT EXISTS design.cats;
 DESCRIBE design.cats;
 
 -- Inserts: MT 
-INSERT INTO design.cats (id, cat_name,fur_color, age) VALUES 
+INSERT INTO design.cats (cat_id, cat_name,fur_color, age) VALUES 
 (DEFAULT, "Grizabella", "white", 1),
 (DEFAULT, "Alonzo", "grey", 3),
 (DEFAULT, "Mausi", "striped", 4)
@@ -30,7 +31,7 @@ SELECT * FROM design.cats;
 
 
 -- Detailtabelle: Verbindung zur MT über Fremdschlüssel
-CREATE TABLE design.servants IF NOT EXISTS design.servants
+CREATE TABLE design.servants
 (
   servant_id   INT         NOT NULL AUTO_INCREMENT,
   servant_name VARCHAR(45) NOT NULL,
@@ -56,7 +57,7 @@ ALTER TABLE design.servants
 DESCRIBE design.servants;
 
 -- Inserts: DT
-INSERT INTO design.servants (id, servant_name, yrs_served, cats_id) VALUES 
+INSERT INTO design.servants (servant_id, servant_name, yrs_served, cat_id) VALUES 
 (DEFAULT, "Monk", 5, 1),
 (DEFAULT, "Rod", 2, 2),
 (DEFAULT, "Luke", 10, 3)

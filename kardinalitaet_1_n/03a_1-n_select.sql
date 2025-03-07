@@ -13,7 +13,7 @@ FROM design.kittens;
 SELECT *
 FROM design.catmoms
 INNER JOIN design.kittens
-ON catmoms.catmom_id = kittens.kitten_id;
+ON catmoms.catmom_id = kittens.catmom_id;
 
 -- Inner Join 2 / Verwandschaft
 -- "X ist die Mutter von Y"
@@ -24,4 +24,6 @@ ON catmoms.catmom_id = kittens.kitten_id;
 
 
 -- Inner Join 3 / Wieviel Kinder haben die Katzen?
-SELECT COUNT(catmoms_id) AS CatMomsOnTheRoad FROM design.kittens;
+SELECT catmoms_ID, COUNT(*) AS KittensOnTheRoad
+ FROM design.kittens
+ GROUP BY catmoms_id;

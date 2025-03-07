@@ -108,10 +108,15 @@ LIMIT 1;
 -- 2. Subquery
 
 -- QUERY / MAX()
--- SELECT MAX(yrs_served) FROM design.servants;
+SELECT MAX(yrs_served) FROM design.servants;
 
 
 
 
 
 -- 3. VIEW / QUERY / MAX() in VIEW gekapselt
+CREATE VIEW MaxYearsServedView AS
+SELECT MAX(yrs_served) AS max_years_served
+FROM design.servants;
+
+

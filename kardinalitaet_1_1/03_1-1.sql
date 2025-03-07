@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS design.servants,  design.cats;:
 
 -- Mastertabelle (MT): unverändert
 
-CREATE TABLE cats IF NOT EXISTS cats;
+CREATE TABLE design.cats IF NOT EXISTS design.cats;
 (
   cat_id    INT         NOT NULL AUTO_INCREMENT,
   cat_name  VARCHAR(45) NOT NULL,
@@ -30,7 +30,7 @@ SELECT * FROM design.cats;
 
 
 -- Detailtabelle: Verbindung zur MT über Fremdschlüssel
-CREATE TABLE servants IF NOT EXISTS servants
+CREATE TABLE design.servants IF NOT EXISTS design.servants
 (
   servant_id   INT         NOT NULL AUTO_INCREMENT,
   servant_name VARCHAR(45) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE servants IF NOT EXISTS servants
 ) COMMENT 'table for servants';
 
 -- Fremdschlüssel: DT
-ALTER TABLE servants
+ALTER TABLE design.servants
   ADD CONSTRAINT FK_cats_TO_servants
     FOREIGN KEY (cat_id)
     REFERENCES cats (cat_id);
@@ -48,7 +48,7 @@ ALTER TABLE servants
 
 -- wichtig bei 1:1  UNIQUE im fk
 
-ALTER TABLE servants
+ALTER TABLE design.servants
   ADD CONSTRAINT UQ_cat_id UNIQUE (cat_id);
 
 
@@ -56,6 +56,11 @@ ALTER TABLE servants
 DESCRIBE design.servants;
 
 -- Inserts: DT
+INSERT INTO design.servants (id, servant_name, yrs_served, cats_id) VALUES 
+(DEFAULT, "tba", 5, 1),
+(DEFAULT, "tba", 2, 2),
+(DEFAULT, "tba", 10, 3)
+;
 
 
 -- Inhalte: DT

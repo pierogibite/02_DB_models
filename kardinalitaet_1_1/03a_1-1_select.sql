@@ -1,5 +1,7 @@
 
 -- SELECTS
+DROP VIEW IF EXISTS design.MaxYearsServedView;
+
 
 -- Einzeltabellen
 SELECT *
@@ -112,11 +114,8 @@ SELECT MAX(yrs_served) FROM design.servants;
 
 
 
-
-
 -- 3. VIEW / QUERY / MAX() in VIEW gekapselt
-CREATE VIEW MaxYearsServedView AS
+CREATE VIEW design.MaxYearsServedView AS
 SELECT MAX(yrs_served) AS max_years_served
 FROM design.servants;
-
 

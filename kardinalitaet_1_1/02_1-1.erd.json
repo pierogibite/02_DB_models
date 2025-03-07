@@ -10,7 +10,7 @@
     "show": 511,
     "database": 4,
     "databaseName": "design",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -88,7 +88,7 @@
           "color": "#E78311"
         },
         "meta": {
-          "updateAt": 1741335765088,
+          "updateAt": 1741335765104,
           "createAt": 1741261739595
         }
       },
@@ -117,7 +117,7 @@
           "color": "#209CD1"
         },
         "meta": {
-          "updateAt": 1741335770089,
+          "updateAt": 1741335770092,
           "createAt": 1741262002097
         }
       }
@@ -139,7 +139,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741334612284,
+          "updateAt": 1741334612286,
           "createAt": 1741261842976
         }
       },
@@ -159,7 +159,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741334773624,
+          "updateAt": 1741334773634,
           "createAt": 1741261870833
         }
       },
@@ -179,7 +179,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741334778475,
+          "updateAt": 1741334778485,
           "createAt": 1741261966544
         }
       },
@@ -199,7 +199,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741335034796,
+          "updateAt": 1741335034801,
           "createAt": 1741261978248
         }
       },
@@ -219,7 +219,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741334614916,
+          "updateAt": 1741334614918,
           "createAt": 1741262022984
         }
       },
@@ -239,7 +239,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741334782748,
+          "updateAt": 1741334782761,
           "createAt": 1741262034968
         }
       },
@@ -259,7 +259,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741335040116,
+          "updateAt": 1741335040119,
           "createAt": 1741262050576
         }
       },
@@ -279,8 +279,8 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741339375322,
-          "createAt": 1741335755288
+          "updateAt": 1741339375324,
+          "createAt": 1741335755314
         }
       }
     },
@@ -309,8 +309,8 @@
           "direction": 1
         },
         "meta": {
-          "updateAt": 1741335755292,
-          "createAt": 1741335755292
+          "updateAt": 1741335755315,
+          "createAt": 1741335755315
         }
       }
     },

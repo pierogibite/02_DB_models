@@ -17,10 +17,10 @@ CREATE TABLE design.cats IF NOT EXISTS design.cats;
 DESCRIBE design.cats;
 
 -- Inserts: MT 
-INSERT INTO design.cats (id, cat_name,fur_color) VALUES 
-(DEFAULT, "Grizabella", "white"),
-(DEFAULT, "Alonzo", "grey"),
-(DEFAULT, "Mausi", "striped")
+INSERT INTO design.cats (id, cat_name,fur_color, age) VALUES 
+(DEFAULT, "Grizabella", "white", 1),
+(DEFAULT, "Alonzo", "grey", 3),
+(DEFAULT, "Mausi", "striped", 4)
 ;
 
 
@@ -57,9 +57,9 @@ DESCRIBE design.servants;
 
 -- Inserts: DT
 INSERT INTO design.servants (id, servant_name, yrs_served, cats_id) VALUES 
-(DEFAULT, "tba", 5, 1),
-(DEFAULT, "tba", 2, 2),
-(DEFAULT, "tba", 10, 3)
+(DEFAULT, "Monk", 5, 1),
+(DEFAULT, "Rod", 2, 2),
+(DEFAULT, "Luke", 10, 3)
 ;
 
 

@@ -93,7 +93,7 @@ INSERT INTO design.purchases (servant_id, product_id) VALUES
 (2, 3),
 (2, 4);
 
-
+--SLEEP einzelbefehle und dann sleep somitz zeitversetung
 
 -- Purchases: Inhalte 
 SELECT * FROM design.purchases;
